@@ -18,7 +18,7 @@ public class GildedRoseTest {
     public void AgedBrieShouldIncreaseInValueAsTimePasses(){
     	Item[] items = new Item[] { new Item("Aged brie", 10, 10) };
 	GildedRose uut = new GildedRose(items);
-	app.updateQuality();
+	uut.updateQuality();
 	assertEquals("Aged brie", uut.items[0].name);
 	}
 }
